@@ -27,11 +27,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Escurecimento com transparência */
+    background-color: rgba(0, 0, 0, 0.4); 
     z-index: 1;
 }
 .carousel-caption {
-    z-index: 2; /* Garante que o texto fique acima da camada de escurecimento */
+    z-index: 2; 
 }
 
 .custom-height-img-card{
@@ -42,24 +42,24 @@
 @media (max-width: 768px) {
     .carousel-caption {
        top: 20%;
-        width: 80%; /* Reduz a largura para evitar que o texto fique muito espremido */
+        width: 80%; 
         left: 50%;
-        transform: translateX(-50%); /* Garante que fique centralizado */
-        bottom: 10%; /* Afasta um pouco do rodapé da imagem */
+        transform: translateX(-50%); 
+        bottom: 10%;
         padding: 15px;
-        text-align: center; /* Mantém o texto alinhado */
+        text-align: center; 
     }
 
     .carousel-caption h2 {
         font-size: 1.4rem;
-        margin-bottom: 15px; /* Mais espaço abaixo do título */
+        margin-bottom: 15px;
         font-weight: bold;
     }
 
     .carousel-caption p {
         font-size: 1rem;
-        line-height: 1.8; /* Mais espaçamento entre as linhas */
+        line-height: 1.8; 
         margin: 0 auto;
-        width: 90%; /* Limita a largura do texto para melhorar a leitura */
+        width: 90%;
     }
 }
