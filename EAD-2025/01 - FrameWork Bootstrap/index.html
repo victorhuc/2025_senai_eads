@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flores Joinville</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/128/3894/3894261.png">
     <link rel="stylesheet" href="style/style.css">
 
 </head>
-  <body>
 
-   <!-- Modal Boas Vindas -->
-   <div class="modal fade" id="modalBoasVindas" tabindex="-1" aria-labelledby="modalBoasVindasLabel" aria-hidden="true">
+<body>
+
+    <!-- Modal Boas Vindas -->
+    <div class="modal fade" id="modalBoasVindas" tabindex="-1" aria-labelledby="modalBoasVindasLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -30,7 +34,8 @@
     </div>
 
     <!-- Modal Novos Produtos -->
-    <div class="modal fade" id="modalNovosProdutos" tabindex="-1" aria-labelledby="modalNovosProdutosLabel" aria-hidden="true">
+    <div class="modal fade" id="modalNovosProdutos" tabindex="-1" aria-labelledby="modalNovosProdutosLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -51,103 +56,129 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://cdn-icons-png.flaticon.com/128/3894/3894261.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="https://cdn-icons-png.flaticon.com/128/3894/3894261.png" alt="Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
                 Flores Joinville
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#jardim">Jardim</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Outros
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#sobre">Sobre Nós</a></li>
-                  <li><a class="dropdown-item" href="#" id="outrosProdutosLink">Outros Produtos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Sair</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jardim">Jardim</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Outros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#sobre">Sobre Nós</a></li>
+                            <li><a class="dropdown-item" href="#" id="outrosProdutosLink">Outros Produtos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
     </nav>
 
 
-  <!-- Carrousel -->
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- Carrousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image-container">
+                    <img src="https://img.freepik.com/fotos-gratis/a-menina-esta-admirando-as-flores-no-jardim_1150-8167.jpg?t=st=1741462049~exp=1741465649~hmac=5339c8fd90b1b68cafbe431efc0ec2cae7e92bc9f693d20a540d3890d91a57f1&w=1060"
+                        class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
+                    <h2 style="color: #FFDAB9;">Flores para Cada Ocasião</h2>
+                    <p>Na nossa floricultura, você encontra flores para todos os momentos especiais da vida. Se está
+                        comemorando um aniversário, um casamento ou apenas quer alegrar o dia de alguém, temos a flor
+                        ideal. Explore nossa seleção de arranjos criados com carinho e qualidade.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image-container">
+                    <img src="https://img.freepik.com/fotos-gratis/jovem-jardineiro-bonito-sorrindo-segurando-uma-panela-grande-com-flores_176420-3814.jpg?t=st=1741462668~exp=1741466268~hmac=0f7e37aabdbe79be93fa75975f2121afd3582e6496b0086d5fceda1e9a85fed3&w=1060"
+                        class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
+                    <h2 style="color: #FFDAB9;">Arranjos Florais Sob Medida</h2>
+                    <p>Na nossa floricultura, você encontra flores para todos os momentos especiais da vida. Se está
+                        comemorando um aniversário, um casamento ou apenas quer alegrar o dia de alguém, temos a flor
+                        ideal. Explore nossa seleção de arranjos criados com carinho e qualidade.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image-container">
+                    <img src="https://img.freepik.com/fotos-gratis/jardineiro-barbudo-serio-preparando-plantas-florais-para-o-mercado_74855-16439.jpg?t=st=1741462779~exp=1741466379~hmac=8baac496edd7af3126d80ef12e287ed96c10b53348b3baa40dfc807dd8533bfd&w=1060"
+                        class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
+                    <h2 style="color: #FFDAB9;">Nossos Produtos Especiais</h2>
+                    <p>Cada pessoa tem um gosto único, e nós respeitamos isso. Criamos arranjos florais sob medida para
+                        que você possa expressar sentimentos e emoções da forma mais pessoal possível. Desde buquês
+                        românticos até peças mais sofisticadas, atendemos suas necessidades com criatividade e atenção
+                        aos detalhes.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="carousel-image-container">
-                <img src="https://img.freepik.com/fotos-gratis/a-menina-esta-admirando-as-flores-no-jardim_1150-8167.jpg?t=st=1741462049~exp=1741465649~hmac=5339c8fd90b1b68cafbe431efc0ec2cae7e92bc9f693d20a540d3890d91a57f1&w=1060" class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
-                <div class="carousel-overlay"></div>
-            </div>
-            <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
-                <h2 style="color: #FFDAB9;">Flores para Cada Ocasião</h2>
-                <p>Na nossa floricultura, você encontra flores para todos os momentos especiais da vida. Se está comemorando um aniversário, um casamento ou apenas quer alegrar o dia de alguém, temos a flor ideal. Explore nossa seleção de arranjos criados com carinho e qualidade.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-image-container">
-                <img src="https://img.freepik.com/fotos-gratis/jovem-jardineiro-bonito-sorrindo-segurando-uma-panela-grande-com-flores_176420-3814.jpg?t=st=1741462668~exp=1741466268~hmac=0f7e37aabdbe79be93fa75975f2121afd3582e6496b0086d5fceda1e9a85fed3&w=1060" class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
-                <div class="carousel-overlay"></div>
-            </div>
-            <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
-                <h2 style="color: #FFDAB9;">Arranjos Florais Sob Medida</h2>
-                <p>Na nossa floricultura, você encontra flores para todos os momentos especiais da vida. Se está comemorando um aniversário, um casamento ou apenas quer alegrar o dia de alguém, temos a flor ideal. Explore nossa seleção de arranjos criados com carinho e qualidade.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-image-container">
-                <img src="https://img.freepik.com/fotos-gratis/jardineiro-barbudo-serio-preparando-plantas-florais-para-o-mercado_74855-16439.jpg?t=st=1741462779~exp=1741466379~hmac=8baac496edd7af3126d80ef12e287ed96c10b53348b3baa40dfc807dd8533bfd&w=1060" class="d-block w-100 custom-height-img-carrousel" style="filter: blur(2px);" alt="...">
-                <div class="carousel-overlay"></div>
-            </div>
-            <div class="carousel-caption mt-5 justify-content-center align-items-center text-center">
-                <h2 style="color: #FFDAB9;">Cuide de Suas Plantas com Nossos Produtos Especiais</h2>
-                <p>Cada pessoa tem um gosto único, e nós respeitamos isso. Criamos arranjos florais sob medida para que você possa expressar sentimentos e emoções da forma mais pessoal possível. Desde buquês românticos até peças mais sofisticadas, atendemos suas necessidades com criatividade e atenção aos detalhes.</p>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
 
 
     <!-- Seção Sobre Nós -->
     <div class="container my-5" id="sobre">
         <div class="row align-items-center">
-        <div class="col-md-6 mb-4">
-            <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-cottagecore-desenhada-a-mao_23-2151070995.jpg?t=st=1741464173~exp=1741467773~hmac=8f99580128a0610643fed1f3c10fc46d8d376136238b9b267749a1138fc73a16&w=740" class="img-fluid" alt="Imagem da Floricultura">
-        </div>
+            <div class="col-md-6 mb-4">
+                <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-cottagecore-desenhada-a-mao_23-2151070995.jpg?t=st=1741464173~exp=1741467773~hmac=8f99580128a0610643fed1f3c10fc46d8d376136238b9b267749a1138fc73a16&w=740"
+                    class="img-fluid" alt="Imagem da Floricultura">
+            </div>
 
-        <div class="col-md-6">
-            <div class="about-text">
-            <div>
-                <h2 class="text-center mb-4" style="color:#ffc38e;">Sobre a Nossa Floricultura</h2>
-                <p class="text-center">Somos uma floricultura apaixonada por transformar momentos especiais em memórias inesquecíveis. Nossa missão é oferecer flores frescas, arranjos exclusivos e atendimento personalizado, sempre com um toque de carinho e dedicação. Desde casamentos até simples gestos de afeto, estamos aqui para ajudar você a expressar seus sentimentos através das flores.</p>
+            <div class="col-md-6">
+                <div class="about-text">
+                    <div>
+                        <h2 class="text-center mb-4" style="color:#ffc38e;">Sobre a Nossa Floricultura</h2>
+                        <p class="text-center">Somos uma floricultura apaixonada por transformar momentos especiais em
+                            memórias inesquecíveis. Nossa missão é oferecer flores frescas, arranjos exclusivos e
+                            atendimento personalizado, sempre com um toque de carinho e dedicação. Desde casamentos até
+                            simples gestos de afeto, estamos aqui para ajudar você a expressar seus sentimentos através
+                            das flores.</p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 
@@ -158,7 +189,8 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/vista-de-lindas-rosas-florescendo_23-2150718851.jpg?t=st=1741464950~exp=1741468550~hmac=ffda3174ac4680728c5707789954b163009614734a0f64e137bfa913933402ea&w=740" class="card-img-top custom-height-img-card" alt="Flor 1">
+                    <img src="https://img.freepik.com/fotos-gratis/vista-de-lindas-rosas-florescendo_23-2150718851.jpg?t=st=1741464950~exp=1741468550~hmac=ffda3174ac4680728c5707789954b163009614734a0f64e137bfa913933402ea&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 1">
                     <div class="card-body">
                         <h5 class="card-title">Rosa Vermelha</h5>
                         <p class="card-text">Perfeita para expressar paixão e carinho.</p>
@@ -170,7 +202,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/flores-brancas-com-fundo-azul_23-2149485728.jpg?t=st=1741465168~exp=1741468768~hmac=7133eec8aeeaf0d52bc7634dc87ba6f4ee753cfacf12fce8c02b4ed52e6980fb&w=740" class="card-img-top custom-height-img-card" alt="Flor 2">
+                    <img src="https://img.freepik.com/fotos-gratis/flores-brancas-com-fundo-azul_23-2149485728.jpg?t=st=1741465168~exp=1741468768~hmac=7133eec8aeeaf0d52bc7634dc87ba6f4ee753cfacf12fce8c02b4ed52e6980fb&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 2">
                     <div class="card-body">
                         <h5 class="card-title">Lírio Branco</h5>
                         <p class="card-text">Elegância e sofisticação para qualquer ocasião.</p>
@@ -182,7 +215,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/flores-coloridas-de-tulipas-da-holanda-holanda_58702-16323.jpg?t=st=1741465316~exp=1741468916~hmac=f85efc702dd4256ed3ab7185cfb23a4f03c0eb159b5fdd1449904d90cb4f517e&w=740" class="card-img-top custom-height-img-card" alt="Flor 3">
+                    <img src="https://img.freepik.com/fotos-gratis/flores-coloridas-de-tulipas-da-holanda-holanda_58702-16323.jpg?t=st=1741465316~exp=1741468916~hmac=f85efc702dd4256ed3ab7185cfb23a4f03c0eb159b5fdd1449904d90cb4f517e&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 3">
                     <div class="card-body">
                         <h5 class="card-title">Tulipas Coloridas</h5>
                         <p class="card-text">Vibrantes e cheias de alegria! Lindas para o seu dia</p>
@@ -194,7 +228,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/um-close-up-de-uma-flor-em-flor-na-natureza_23-2151839537.jpg?t=st=1741465363~exp=1741468963~hmac=d489d61203ac95647e6d6332beb138409ce6d7e3772a2a870d54d7fd3a61472d&w=740" class="card-img-top custom-height-img-card" alt="Flor 4">
+                    <img src="https://img.freepik.com/fotos-gratis/um-close-up-de-uma-flor-em-flor-na-natureza_23-2151839537.jpg?t=st=1741465363~exp=1741468963~hmac=d489d61203ac95647e6d6332beb138409ce6d7e3772a2a870d54d7fd3a61472d&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 4">
                     <div class="card-body">
                         <h5 class="card-title">Margaridas</h5>
                         <p class="card-text">Simples e delicadas, para iluminar o dia.</p>
@@ -208,7 +243,8 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/flores-da-orquidea_74190-1264.jpg?t=st=1741465427~exp=1741469027~hmac=91ef484ff2556fcca6feda55a4e51372eca4a10d4678829116d0619d7ba4a49a&w=1060" class="card-img-top custom-height-img-card" alt="Flor 5">
+                    <img src="https://img.freepik.com/fotos-gratis/flores-da-orquidea_74190-1264.jpg?t=st=1741465427~exp=1741469027~hmac=91ef484ff2556fcca6feda55a4e51372eca4a10d4678829116d0619d7ba4a49a&w=1060"
+                        class="card-img-top custom-height-img-card" alt="Flor 5">
                     <div class="card-body">
                         <h5 class="card-title">Orquídea</h5>
                         <p class="card-text">Exótica e charmosa, a escolha perfeita para presentes.</p>
@@ -220,7 +256,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/lindo-girassol-com-folhas-verdes_2829-15853.jpg?t=st=1741465497~exp=1741469097~hmac=ed99b25ae36d8cb688bcbc8c780d197e94f880b5414b2d7c8583c81b8dfa4ac0&w=740" class="card-img-top custom-height-img-card" alt="Flor 6">
+                    <img src="https://img.freepik.com/fotos-gratis/lindo-girassol-com-folhas-verdes_2829-15853.jpg?t=st=1741465497~exp=1741469097~hmac=ed99b25ae36d8cb688bcbc8c780d197e94f880b5414b2d7c8583c81b8dfa4ac0&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 6">
                     <div class="card-body">
                         <h5 class="card-title">Girassol</h5>
                         <p class="card-text">Cheio de luz e alegria, perfeito para surpreender.</p>
@@ -232,7 +269,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/hawaii-plumeria-leaf-bloom-floral_1428-465.jpg?t=st=1741465567~exp=1741469167~hmac=d94c8fc2d8318271f62965ab76757dd982556e358e8c1e70f2243927437df82f&w=740" class="card-img-top custom-height-img-card" alt="Flor 7">
+                    <img src="https://img.freepik.com/fotos-gratis/hawaii-plumeria-leaf-bloom-floral_1428-465.jpg?t=st=1741465567~exp=1741469167~hmac=d94c8fc2d8318271f62965ab76757dd982556e358e8c1e70f2243927437df82f&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 7">
                     <div class="card-body">
                         <h5 class="card-title">Jasmim</h5>
                         <p class="card-text">Fragrância suave e encantadora para qualquer ambiente.</p>
@@ -244,7 +282,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/flor-de-ranunculo-vermelho-lindo-a-luz-do-sol_23-2148058967.jpg?t=st=1741465657~exp=1741469257~hmac=cf66c3fbd4e18d3faedcff9fb50ff5c746161776a75875ae94215ca647675899&w=1060" class="card-img-top custom-height-img-card" alt="Flor 8">
+                    <img src="https://img.freepik.com/fotos-gratis/flor-de-ranunculo-vermelho-lindo-a-luz-do-sol_23-2148058967.jpg?t=st=1741465657~exp=1741469257~hmac=cf66c3fbd4e18d3faedcff9fb50ff5c746161776a75875ae94215ca647675899&w=1060"
+                        class="card-img-top custom-height-img-card" alt="Flor 8">
                     <div class="card-body">
                         <h5 class="card-title">Cravo</h5>
                         <p class="card-text">Simples e encantador, ideal para todas as ocasiões.</p>
@@ -258,7 +297,8 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-do-close-up-de-uma-flor-bonita-da-dalia-com-petalas-de-rosa-com-um-fundo-desfocado_181624-4530.jpg?t=st=1741465727~exp=1741469327~hmac=900eb784d2239a931f7ace8e27cd95ff4742177771c06e3a9ba28d3bacafd0fa&w=740" class="card-img-top custom-height-img-card" alt="Flor 9">
+                    <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-do-close-up-de-uma-flor-bonita-da-dalia-com-petalas-de-rosa-com-um-fundo-desfocado_181624-4530.jpg?t=st=1741465727~exp=1741469327~hmac=900eb784d2239a931f7ace8e27cd95ff4742177771c06e3a9ba28d3bacafd0fa&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 9">
                     <div class="card-body">
                         <h5 class="card-title">Dálias</h5>
                         <p class="card-text">Flores exuberantes, perfeitas para um toque de cor.</p>
@@ -270,7 +310,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/foto-aerea-de-uma-flor-roxa-de-amor-perfeito-em-um-dia-ensolarado_181624-16552.jpg?t=st=1741465796~exp=1741469396~hmac=3fa1039d60cec3066fb4cce22b99dd772f087785a077711f2d4c4f2c2f85269d&w=1380" class="card-img-top custom-height-img-card" alt="Flor 10">
+                    <img src="https://img.freepik.com/fotos-gratis/foto-aerea-de-uma-flor-roxa-de-amor-perfeito-em-um-dia-ensolarado_181624-16552.jpg?t=st=1741465796~exp=1741469396~hmac=3fa1039d60cec3066fb4cce22b99dd772f087785a077711f2d4c4f2c2f85269d&w=1380"
+                        class="card-img-top custom-height-img-card" alt="Flor 10">
                     <div class="card-body">
                         <h5 class="card-title">Violetas</h5>
                         <p class="card-text">Delicadeza e beleza em cada pétala.</p>
@@ -282,7 +323,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/closeup-da-gentiana-scabra-a-genciana-japonesa_181624-60477.jpg?t=st=1741465890~exp=1741469490~hmac=f2a8987595808468fc3b3b6191adfddd62d67eed48e2056de720a2478ace2f9a&w=1060" class="card-img-top custom-height-img-card" alt="Flor 11">
+                    <img src="https://img.freepik.com/fotos-gratis/closeup-da-gentiana-scabra-a-genciana-japonesa_181624-60477.jpg?t=st=1741465890~exp=1741469490~hmac=f2a8987595808468fc3b3b6191adfddd62d67eed48e2056de720a2478ace2f9a&w=1060"
+                        class="card-img-top custom-height-img-card" alt="Flor 11">
                     <div class="card-body">
                         <h5 class="card-title">Miosótis</h5>
                         <p class="card-text">Simboliza a memória e o carinho.</p>
@@ -294,7 +336,8 @@
 
             <div class="col-md-3 mb-4">
                 <div class="card">
-                    <img src="https://img.freepik.com/fotos-gratis/fundo-de-closeup-de-lavanda-roxa_1372-441.jpg?t=st=1741465932~exp=1741469532~hmac=be34658be13c3fd47e7f383a15104edf4eca359ba83279e554e005e9994a8290&w=740" class="card-img-top custom-height-img-card" alt="Flor 12">
+                    <img src="https://img.freepik.com/fotos-gratis/fundo-de-closeup-de-lavanda-roxa_1372-441.jpg?t=st=1741465932~exp=1741469532~hmac=be34658be13c3fd47e7f383a15104edf4eca359ba83279e554e005e9994a8290&w=740"
+                        class="card-img-top custom-height-img-card" alt="Flor 12">
                     <div class="card-body">
                         <h5 class="card-title">Lavanda</h5>
                         <p class="card-text">Fragrância relaxante, ideal para presentes e decoração.</p>
@@ -342,7 +385,8 @@
             <div class="row">
                 <div class="col-12 mb-4">
                     <label for="mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"
+                        required></textarea>
                 </div>
             </div>
 
@@ -355,108 +399,115 @@
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
         <div>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f"></i>
             </a>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
             </a>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
+                <i class="fab fa-google"></i>
             </a>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin"></i>
             </a>
             <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i>
             </a>
         </div>
 
         </section>
 
         <section class="">
-        <div class="container text-center text-md-start mt-5">
+            <div class="container text-center text-md-start mt-5">
 
-            <div class="row mt-3">
-       
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-  
-                <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Flores Joinville
-                </h6>
-                <p>
-                Aqui vão algumas informações de nossa Floricultura
-                </p>
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Flores Joinville
+                        </h6>
+                        <p>
+                            Aqui vão algumas informações de nossa Floricultura
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Produtos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Flores</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ferramentas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terras</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vasos</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links Úteis
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Carrinho</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Configurações</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Compras</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ajuda</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                        <p><i class="fas fa-home me-3"></i> Joinville, SC, Brasil</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            floresjoinville@email.com.br
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 55 47 9 9854-5842</p>
+                        <p><i class="fas fa-print me-3"></i> + 55 47 3451-5842</p>
+                    </div>
+
+                </div>
+
             </div>
-   
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <h6 class="text-uppercase fw-bold mb-4">
-                Produtos
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Flores</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Ferramentas</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Terras</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Vasos</a>
-                </p>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <h6 class="text-uppercase fw-bold mb-4">
-                Links Úteis
-                </h6>
-                <p>
-                <a href="#!" class="text-reset">Carrinho</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Configurações</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Compras</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Ajuda</a>
-                </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
-                <p><i class="fas fa-home me-3"></i> Joinville, SC, Brasil</p>
-                <p>
-                <i class="fas fa-envelope me-3"></i>
-                floresjoinville@email.com.br
-                </p>
-                <p><i class="fas fa-phone me-3"></i> + 55 47 9 9854-5842</p>
-                <p><i class="fas fa-print me-3"></i> + 55 47 3451-5842</p>
-            </div>
-   
-            </div>
-   
-        </div>
         </section>
 
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2025 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Victor Corrêa</a>
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Victor Corrêa</a>
         </div>
 
     </footer>
-        <script src="js/script.js"> </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    </body>
+    <script src="js/script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

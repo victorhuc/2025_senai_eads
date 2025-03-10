@@ -12,10 +12,10 @@
   }
 
 .about-text {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .carousel-image-container {
@@ -37,4 +37,29 @@ height: 100%;
 .custom-height-img-card{
     height: 236px; 
     object-fit: cover; 
-}  
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+       top: 20%;
+        width: 80%; /* Reduz a largura para evitar que o texto fique muito espremido */
+        left: 50%;
+        transform: translateX(-50%); /* Garante que fique centralizado */
+        bottom: 10%; /* Afasta um pouco do rodapé da imagem */
+        padding: 15px;
+        text-align: center; /* Mantém o texto alinhado */
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px; /* Mais espaço abaixo do título */
+        font-weight: bold;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        line-height: 1.8; /* Mais espaçamento entre as linhas */
+        margin: 0 auto;
+        width: 90%; /* Limita a largura do texto para melhorar a leitura */
+    }
+}
