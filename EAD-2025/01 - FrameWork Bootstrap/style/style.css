@@ -1,0 +1,40 @@
+.custom-height-img-carrousel{
+    height: 550px; 
+    object-fit: cover; 
+}   
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+  }
+
+.about-text {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.carousel-image-container {
+    position: relative;
+}
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Escurecimento com transparência */
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2; /* Garante que o texto fique acima da camada de escurecimento */
+}
+
+.custom-height-img-card{
+    height: 236px; 
+    object-fit: cover; 
+}  
