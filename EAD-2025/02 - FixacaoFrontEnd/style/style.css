@@ -5,7 +5,6 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1vh 2vh;
     background: #0357ac;
@@ -16,9 +15,16 @@ header {
     z-index: 1000;
 }
 
-header img{
-    padding-right: 5vh;
+header button,
+header img {
+    margin: 0 5vh;
 }
+
+header h3 {
+    flex: 1;
+    text-align: center;
+}
+
 
 #menuBtn {
     background: #0357ac;
@@ -269,6 +275,15 @@ footer {
 
     header img{
         height: 20px;
+    }
+
+    
+    header img {
+        margin: 0 4vh;
+    }
+
+    header button{
+        margin: 0 1vh;
     }
 
     main {
