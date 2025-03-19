@@ -1,0 +1,27 @@
+# Cadastro de Usuários - Layout
+
+Este é um projeto de layout de uma página de **Cadastro de Usuários**, desenvolvido com HTML, CSS e JavaScript. O objetivo é criar uma interface limpa e intuitiva para o cadastro de informações de usuários em várias etapas.
+
+## Funcionalidades
+
+- **Menu Lateral**: Um menu de navegação lateral que aparece ao clicar no botão "Menu". Ele é responsivo e se adapta a dispositivos móveis.
+- **Formulário Multietapas**: O cadastro é dividido em 7 etapas, sendo elas:
+  1. Dados Pessoais
+  2. Contato
+  3. Credenciais de Acesso
+  4. Informações Profissionais
+  5. Preferências e Redes Sociais
+  6. Pagamento e Dados Bancários
+  7. Outros Recursos
+- **Progress Bar**: Uma barra de progresso que indica o avanço nas etapas do formulário.
+- **Responsividade**: O layout é adaptado para diferentes tamanhos de tela, garantindo uma boa experiência tanto em desktop quanto em dispositivos móveis.
+- **Validação e Interatividade**: JavaScript para controlar a navegação entre as etapas e exibir a porcentagem de progresso.
+
+## Tecnologias Utilizadas
+
+- **HTML**: Estruturação da página e dos formulários.
+- **CSS**: Estilo da página, incluindo responsividade e efeitos visuais.
+- **JavaScript**: Lógica para navegação entre as etapas e interação com o formulário.
+  
+## Estrutura do Projeto
+

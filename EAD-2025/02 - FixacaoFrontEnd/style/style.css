@@ -1,0 +1,282 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vh;
+    background: #0357ac;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img{
+    padding-right: 5vh;
+}
+
+#menuBtn {
+    background: #0357ac;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 5vh;
+    border-color: #f4f7fa;
+    border: 0;
+    transition: background 0.3s;
+}
+#menuBtn:hover {
+    background: #0468d7;
+}
+#menuLateral {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #0357ac;
+    padding-top: 5%;
+    transition: 0.3s;
+    text-align: center;
+}
+#menuLateral.show {
+    left: 0;
+}
+#menuLateral ul {
+    list-style: none;
+    padding: 0;
+}
+#menuLateral ul li {
+    padding: 15px;
+    text-align: left; 
+}
+#menuLateral ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#menuLateral img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botoesEnviar{
+    text-align: center;
+}
+
+#enviarBtn{
+    background: #0ad615;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 5vh;
+    width: 15vh;
+    border-color: #f4f7fa;
+    border: 0;
+    transition: background 0.3s;
+}
+
+#limparBtn{
+    background: #f5a819;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 5vh;
+    width: 15vh;
+    border-color: #f4f7fa;
+    border: 0;
+    transition: background 0.3s;
+}
+
+main {
+    transition: margin-left 0.3s;
+    padding: 15vh;
+    margin-left: 0;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+.card {
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #0357ac;
+}
+
+.input-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    height: 10%;
+    background: #0357ac;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #0357ac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+
+@media (min-width: 769px) {
+    #menuLateral.show + main {
+        margin-left: 250px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menuLateral {
+        width: 100%;
+        left: -100%;
+        padding-top: 15%;
+    }
+    #menuLateral.show {
+        left: 0;
+    }
+
+    header img{
+        height: 20px;
+    }
+
+    main {
+        margin-left: 0 !important;
+        padding: 15vh 2vh 12vh 1vh;
+    }
+}
+
+
+
+
