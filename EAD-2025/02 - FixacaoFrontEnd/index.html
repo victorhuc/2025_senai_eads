@@ -16,7 +16,7 @@
     <header>
         <button id="menuBtn" class="btn">☰ Menu</button>
         <h3>Cadastro de Usuário</h3>
-        <img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png" alt="Logo" height="35px">
+        <a href="index.html"><img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png" alt="Logo" height="35px"></a>
     </header>
 
     <div id="menuLateral">
@@ -47,7 +47,7 @@
         </ul>
         
         <div>
-            <img src="https://img.freepik.com/fotos-gratis/renderizacao-em-3d-de-design-de-avatar-online_23-2149699876.jpg?t=st=1742342926~exp=1742346526~hmac=660150395802ebc0ea5abd7e157d5f5ffad6019006840c5d2f46e89e734e917f&w=740"
+            <img src="https://img.freepik.com/fotos-gratis/personagem-de-desenho-animado-em-3d_23-2151034081.jpg?t=st=1742424583~exp=1742428183~hmac=eca64c0d19ebaaa8e96fc0b1166cacbc2c2c1f84056eb5846c7903c64cb267f8&w=740"
                 alt="Imagem de perfil">
         </div>
     </div>
@@ -64,7 +64,7 @@
         <div class="modal-content">
             <span class="close" onclick="fecharModal('modalContato')">&times;</span>
             <h2>Contato</h2>
-            <p>Para suporte ou dúvidas, entre em contato pelo e-mail: suporte@empresa.com</p>
+            <p>Para suporte ou dúvidas, entre em contato pelo e-mail: suporte@senai.com.br</p>
         </div>
     </div>
 
@@ -74,12 +74,13 @@
             <div id="progressBar" class="progress-bar">0%</div>
         </div>
 
-        <form action="" method="post">
+        <form method="post">
             <div class="form-step active" id="step1">
                 <h3 style="color: #f5a819;">👤 - Dados Pessoais</h3>
                 <hr>
                 <div class="card">
                     <label for="nome" class="input-label">Nome Completo</label>
+                    <input type="text" id="nome" class="input-field" placeholder="Seu nome aqui">
                     <label for="dataNascimento" class="input-label">Data de Nascimento</label>
                     <input type="date" id="dataNascimento" class="input-field">
                     <label for="sexo" class="input-label">Sexo</label>
@@ -187,11 +188,12 @@
                     <label for="genero-musical" class="input-label">Gênero Musical Favorito</label>
                     <input type="text" id="genero-musical" class="input-field">
 
-                    <label class="input-label">Hobbies</label><br>
-                    <input type="checkbox" id="futebol"><label for="futebol"> Futebol</label>
-                    <input type="checkbox" id="leitura"><label for="leitura"> Leitura</label>
-                    <input type="checkbox" id="viagens"><label for="viagens"> Viagens</label>
-                    <input type="checkbox" id="musica"><label for="musica"> Música</label>
+                    <div class="hobbies-group">
+                        <input type="checkbox" id="futebol"><label for="futebol"> Futebol</label>
+                        <input type="checkbox" id="leitura"><label for="leitura"> Leitura</label>
+                        <input type="checkbox" id="viagens"><label for="viagens"> Viagens</label>
+                        <input type="checkbox" id="musica"><label for="musica"> Música</label>
+                    </div>
 
                     <label for="facebook" class="input-label">Facebook</label>
                     <input type="text" id="facebook" class="input-field">
@@ -263,7 +265,7 @@
                 </div>
                 <div class="botoesEnviar">
                     <button id="enviarBtn" onclick="enviarFormulario()">Enviar</button>
-                    <button id="limparBtn" type="reset"">Limpar</button>
+                    <button id="limparBtn" type="reset">Limpar</button>
                 </div>
             </div>
         </form>

@@ -25,6 +25,10 @@ header h3 {
     text-align: center;
 }
 
+.hobbies-group{
+    margin-bottom: 10px;
+}
+
 
 #menuBtn {
     background: #0357ac;
@@ -271,6 +275,10 @@ footer {
     }
     #menuLateral.show {
         left: 0;
+    }
+
+    header h3{
+        font-size: 1rem;
     }
 
     header img{
