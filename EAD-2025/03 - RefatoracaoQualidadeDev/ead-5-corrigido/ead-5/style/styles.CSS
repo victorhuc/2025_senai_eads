@@ -1,0 +1,145 @@
+/* Reseta o box-sizing para garantir consistência no dimensionamento */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Garante que o dimensionamento de todos os elementos siga o modelo de box-model consistente. */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Definição da fonte de forma mais específica, trocando de Verdana para Arial. */
+    background-color: #f4f4f4; /* Cor de fundo suave para a página. */
+    margin: 0; /* Remove a margem padrão do corpo da página. */
+    padding: 0; /* Remove o padding padrão do corpo da página. */
+}
+
+.container {
+    width: 100%; /* Faz com que o contêiner ocupe toda a largura disponível. */
+    max-width: 600px; /* Limita a largura máxima do contêiner a 600px. */
+    margin: 0 auto; /* Centraliza o contêiner na tela. */
+    padding: 20px; /* Adiciona um espaçamento interno de 20px no contêiner. */
+    background-color: white; /* Define o fundo do contêiner como branco. */
+    border-radius: 8px; /* Arredonda as bordas do contêiner. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para dar um efeito de elevação. */
+    overflow: hidden; /* Garante que qualquer conteúdo que ultrapasse os limites do contêiner seja ocultado. */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título da página. */
+    color: #333; /* Cor do texto do título, para maior contraste e legibilidade. */
+}
+
+form {
+    display: flex; /* Utiliza o layout flexível. */
+    flex-direction: column; /* Organiza os itens do formulário em uma coluna. */
+    gap: 15px; /* Define o espaçamento entre os elementos do formulário. */
+}
+
+.input-group {
+    display: flex; /* Flex para o grupo de inputs. */
+    flex-direction: column; /* Organiza o rótulo e o campo de input em uma coluna. */
+}
+
+label {
+    font-size: 14px; /* Define o tamanho da fonte do rótulo. */
+    color: #333; /* Cor do texto do rótulo. */
+    margin-bottom: 8px; /* Adiciona espaçamento abaixo do rótulo. */
+}
+
+input, textarea {
+    width: 100%; /* Faz com que os campos de input e textarea ocupem toda a largura disponível. */
+    padding: 12px; /* Adiciona preenchimento para os campos, tornando-os mais fáceis de interagir. */
+    border: 1px solid #ccc; /* Define uma borda clara e fina para os campos. */
+    border-radius: 8px; /* Arredonda as bordas dos campos. */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura total do campo. */
+    font-size: 16px; /* Define o tamanho da fonte dentro dos campos. */
+}
+
+button {
+    padding: 10px 20px; /* Define o preenchimento do botão para torná-lo mais espaçoso. */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão. */
+    cursor: pointer; /* Define o cursor como 'pointer' para indicar que é clicável. */
+    background-color: #4CAF50; /* Cor de fundo verde para o botão. */
+    color: white; /* Cor do texto do botão em branco. */
+    border: none; /* Remove a borda do botão. */
+    border-radius: 5px; /* Arredonda as bordas do botão. */
+    transition: background-color 0.3s ease; /* Efeito suave de transição na cor de fundo ao passar o mouse. */
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner. */
+    max-width: 180px; /* Define a largura máxima para o botão. */
+    margin: 10px 0; /* Adiciona espaçamento acima e abaixo do botão. */
+}
+
+button:hover {
+    background-color: #45a049; /* Muda a cor do botão para um tom mais escuro de verde quando o mouse passa sobre ele. */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores da lista de usuários. */
+    padding: 0; /* Remove o padding padrão da lista. */
+}
+
+li {
+    padding: 10px; /* Adiciona preenchimento ao item da lista para maior espaçamento. */
+    border-bottom: 1px solid #ccc; /* Adiciona uma linha divisória entre os itens da lista. */
+    display: flex; /* Organiza os itens dentro da lista em linha. */
+    align-items: center; /* Alinha verticalmente os itens no centro. */
+}
+
+li img {
+    margin-right: 10px; /* Adiciona um espaço à direita da imagem. */
+    border-radius: 50%; /* Arredonda a imagem para um formato circular. */
+    width: 50px; /* Define a largura da imagem. */
+    height: 50px; /* Define a altura da imagem. */
+    object-fit: cover; /* Garante que a imagem cubra completamente o espaço disponível sem distorção. */
+}
+
+.botoes-controle{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.remove-btn{
+    background-color: rgb(158, 0, 0);
+}
+
+
+.remove-btn:hover{
+    background-color: rgb(192, 4, 4);
+}
+
+.about-btn{
+    background-color: rgb(228, 172, 18);
+
+}
+
+.about-btn:hover{
+    background-color: rgb(228, 172, 18);
+
+}
+
+#userInfoModal {
+    position: fixed; /* Define a posição fixa do modal para ele ficar fixo na tela. */
+    top: 0; /* Posiciona o modal no topo da tela. */
+    left: 0; /* Posiciona o modal à esquerda da tela. */
+    width: 100%; /* Faz o modal ocupar toda a largura da tela. */
+    height: 100%; /* Faz o modal ocupar toda a altura da tela. */
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente para o modal. */
+    display: flex; /* Utiliza flexbox para centralizar o modal na tela. */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do modal. */
+    align-items: center; /* Centraliza verticalmente o conteúdo do modal. */
+}
+
+#userInfoModal > div {
+    background-color: white; /* Define o fundo do modal como branco. */
+    padding: 20px; /* Adiciona preenchimento ao conteúdo do modal. */
+    border-radius: 8px; /* Arredonda as bordas do conteúdo do modal. */
+    text-align: center; /* Centraliza o texto no modal. */
+    width: 300px; /* Define a largura do modal. */
+}
+
+#userInfoModal img {
+    width: 100px; /* Define a largura da imagem do perfil no modal. */
+    height: 100px; /* Define a altura da imagem do perfil no modal. */
+    border-radius: 50%; /* Arredonda a imagem para que ela fique circular. */
+    object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorção. */
+}

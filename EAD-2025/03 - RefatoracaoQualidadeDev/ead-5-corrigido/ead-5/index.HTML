@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres para UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tornando o layout responsivo em dispositivos móveis. -->
+    <title>Cadastro Usuários</title> <!-- Título da página. -->
+    <link rel="stylesheet" type="text/css" href="style/styles.css"> <!-- Link para o arquivo de estilo externo. -->
+</head>
+<body>
+    <div class="container"> <!-- Contêiner principal da página. -->
+        <h1>Cadastro de Usuários</h1> <!-- Título da seção de cadastro de usuários. -->
+        <form id="userForm"> <!-- Formulário de cadastro. -->
+            <div class="input-group"> <!-- Grupo de input para o nome. -->
+                <label for="nomeUsuario">Nome:</label> <!-- Rótulo para o campo de nome. -->
+                <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite o nome do usuário"> <!-- Campo de texto para o nome do usuário. -->
+            </div>
+            <div class="input-group"> <!-- Grupo de input para o email. -->
+                <label for="emailUsuario">Email:</label> <!-- Rótulo para o campo de email. -->
+                <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite o email do usuário"> <!-- Campo de email para o usuário. -->
+            </div>
+            <div class="input-group"> <!-- Grupo de input para a foto. -->
+                <label for="fotoUsuario">Foto:</label> <!-- Rótulo para o campo de foto. -->
+                <input type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*"> <!-- Campo de arquivo para upload da foto do usuário. -->
+            </div>
+            <div class="button-group"> <!-- Grupo para o botão de adicionar. -->
+                <button type="button" onclick="adicionarUsuarios()">Adicionar</button> <!-- Botão que chama a função 'adicionarUsuarios' quando clicado. -->
+            </div>
+        </form>
+        <h2>Usuários Cadastrados</h2> <!-- Título para a lista de usuários cadastrados. -->
+        <ul id="listaUsuarios"></ul> <!-- Lista de usuários cadastrados. -->
+        <div id="userInfoModal" style="display: none;"> <!-- Modal para exibir informações do usuário. Inicialmente escondido. -->
+            <div class="modal-content"> <!-- Conteúdo do modal. -->
+                <span class="close-btn" onclick="closeUserInfo()">&times;</span> <!-- Botão de fechar o modal. -->
+                <div class="profile-container"> <!-- Contêiner da foto do perfil. -->
+                    <img id="profileImage" src="" alt="Foto de perfil" /> <!-- Imagem de perfil do usuário. -->
+                </div>
+                <textarea id="observations" placeholder="Adicione uma observação..." rows="4"></textarea> <!-- Campo de texto para adicionar uma observação sobre o usuário. -->
+                <button onclick="saveObservation()">Salvar Observação</button> <!-- Botão para salvar a observação do usuário. -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script> <!-- Link para o script JavaScript. -->
+</body>
+</html>

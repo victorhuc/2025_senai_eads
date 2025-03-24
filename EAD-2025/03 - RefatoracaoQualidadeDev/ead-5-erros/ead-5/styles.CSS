@@ -1,0 +1,16 @@
+/* Está tendo suplicidade de informações para as paginas que usam esse css externo */
+
+body {
+    background: lightgrey; /* Definir uma cor de fundo clara é uma boa prática, mas pode conflitar com outros elementos de fundo se houver um tema mais escuro ou se você quiser algo mais consistente com o design. Considere um tom mais neutro, como #f4f4f4, como usado nos exemplos anteriores. */
+    font-family: Verdana; /* Verdana é uma boa fonte, mas Arial ou sans-serif são mais comuns em muitos projetos. Se o design anterior usou Arial, seria interessante manter a consistência. */
+}
+
+h1 {
+    color: blue; /* A cor azul é muito forte. No contexto dos exemplos anteriores, a cor foi definida como #333 (quase preto) para uma leitura mais confortável. Considerar um tom mais sóbrio seria uma boa prática. */
+}
+
+button {
+    padding: 10px; /* Bom uso de espaçamento interno, mas dependendo do design, poderia ser mais consistente com a definição anterior de 16px. */
+    border: none; /* Sem borda está ok, mas se o botão for utilizado em um fundo muito claro, talvez uma borda sutil ou sombra seja útil para dar destaque ao botão. */
+    cursor: pointer; /* Perfeito, isso indica claramente que o botão é clicável. */
+}
